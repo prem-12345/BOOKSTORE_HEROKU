@@ -1,0 +1,56 @@
+<app-dashboard></app-dashboard>
+
+
+<div class="wish-container" >
+
+    <div class="section1" fxLayout="column" fxLayoutAlign="start start">
+
+        <div class="heading" fxLayout="row">
+            <p class="text1" routerLink="/dashboard/get-all-books">Home /</p>
+            <p class="text2">My wishlist</p>
+        </div>
+        <div class="expansion" [ngClass.xs]="'wish'">
+            <mat-accordion >
+                <mat-expansion-panel hideToggle >
+        
+                    <mat-expansion-panel-header >
+                        <mat-panel-title>
+                            My Wishlist ({{whishitemscount}})
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+
+                    <div fxLayout="row" *ngFor="let data of wishitems">
+
+                        <div class="img-div">
+                            <img src="../../../assets/Image 11@2x.png" alt="" class="img">
+                        </div>
+        
+                        <div class="img-div">
+                            <p class="bookname">{{data.product_id.bookName}}</p>
+                            <p class="author">by {{data.product_id.author}}</p>
+                            <p class="actualprice">Rs. {{data.product_id.price}}
+        
+                        </div>
+        
+                        <div class="img-div">
+                            <button class="delete" mat-icon-button>
+                                <mat-icon class="material-icons-outlined" (click)="deletewishlistitem(data)">delete</mat-icon>
+                            </button>
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+<div class="dash-container">
+    <mat-toolbar [ngClass.xs]="'tool-div'">
+
+        <img src="../../../assets/education.svg" alt="" width="31px" height="24px" class="book-img"
+            routerLink="/profile">
+
+        <span class="text1" (click)="logOut()">Bookstore</span>
+
+        <span class="search" fxHide.lt-xs  fxHide.lt-md fxFlex=40 fxLayout="row" fxLayoutAlign="start center">
+            <a href="#" fxHide.lt-sm >
+                <mat-icon id="icon">search</mat-icon>
+            </a>
+            <input id="searchbar" type="text" placeholder="Search...">
+        </span>
+
+        <span class="example-spacer"></span>
+
+
+        <span [ngClass.xs]="'iconing'" [ngClass.sm]="'container'" [ngClass]="'container'" fxLayout="column"
+            fxLayoutAlign="center center" fxHide.gt-sm fxHide.lt-md>
+
+            <button mat-icon-button class="profile-button" aria-label="Example search icon">
+                <mat-icon class="profile-icon">search</mat-icon>
+            </button>
+
+            <a class="profile-hint">search</a>
+
+        </span>
+
+        <span [ngClass.xs]="'iconing'" [ngClass.sm]="'container'" [ngClass]="'container'" fxLayout="column"
+            fxLayoutAlign="center center">
+
+            <div class="pofile-div">
+                <button mat-icon-button class="profile-but" aria-label="Example person icon" routerLink="/wishlist">
+                    <mat-icon class="profile-icon">person_outline</mat-icon>
+                </button>
+
+                <a class="profile-hint" [matMenuTriggerFor]="belowMenu">Profile</a>
+            </div>
+
+            <mat-menu #belowMenu="matMenu">
+                <p class="titles">Hello, Profile</p>
+                <button mat-menu-item>
+                    <mat-icon>person_outline</mat-icon>
+                    Profile
+                </button>
+                <button mat-menu-item>
+                    <mat-icon>shopping_bag</mat-icon>
+                    My Orders
+                </button>
+                <button mat-menu-item>
+                    <mat-icon>favorite_border</mat-icon>
+                    My Wishlist
+                </button>
+                <button mat-menu-item id="logout" style="width: 100px;" fxLayoutAlign="center center">Log Out</button>
+            </mat-menu>
+
+        </span>
+
+
+        <span [ngClass.xs]="'iconing'" [ngClass.sm]="'container2'" [ngClass]="'container2'" fxLayout="column"
+            fxLayoutAlign="center center">
+
+            <div class="cart-div">
+                <button matBadge="{{message}}" matBadgeColor="warn" mat-icon-button class="cart-but" aria-label="Example cart icon" (click)="onCart()">
+                    <img src="../../../assets/cart.svg" alt="" class="profile-icon" height="20px" width="20px"
+                        routerLink="/my-cart">
+                </button>
+                <a href="" class="cart-hint">Cart</a>
+            </div>
+        </span>
+
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+</div>

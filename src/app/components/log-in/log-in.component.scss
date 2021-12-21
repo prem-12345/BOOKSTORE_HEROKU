@@ -1,0 +1,138 @@
+
+.login-container{
+    height: 695px;
+    width: 1367px;
+    background-color: #878787;
+    
+}
+
+.card1{
+    background-color: #F5F5F5;
+    height:345px;
+    width: 290px;
+    border-radius: 18px;
+}
+
+.card2{
+    background-color: white;
+    height: 400px;
+    width: 315px;
+    border-radius: 8px;
+    z-index: 1;
+    margin-left: -20px;
+}
+
+.text{
+    position: relative;
+    top: 23px;
+}
+    
+    
+.card-title{
+    font-family: sans-serif;
+    margin-bottom: 15px;
+    font-size: 17px;
+    border: none;
+    width: 97px;
+    background-color: white;
+    margin-left: -15px;
+}
+
+::ng-deep .mat-form-field-label-wrapper { top: -1.5em; }
+::ng-deep .mat-form-field-flex > .mat-form-field-infix { padding: 0px 0px !important; width: 202px; border-top: 0.84375em;}
+
+
+.content{
+    position: relative;
+    left: 40px;
+}
+
+.input-field{
+    position: relative;
+    top: -9px;
+    padding: 4px;
+    width: 210px;
+}
+
+.forgot-link{
+    position: relative;
+    left: 127px;
+    font-size: 12px;
+    font-family: sans-serif;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+.sub-title{
+    font-size: 10px;
+    font-family: sans-serif;
+    margin-top: -10px;
+}
+
+.login-btn{
+    position: relative;
+    width: 225px;
+    padding:8px;
+    background-color: #A03037;
+    border: none;
+    color: white;
+}
+
+.divider{
+    position: relative;
+    left: 100px;
+    top:4px;
+}
+
+.footer-btn{
+    position: relative;
+    top: 4px;
+    color: white;
+
+}
+
+.end-btn{
+    padding: 7px;
+    width: 110px;
+    
+}
+
+.f-btn{
+    background-color:#4266B2;
+    border: none;
+    color: white;
+}
+
+.g-btn{
+    background-color:#E4E4E4;
+    border: none;
+    color: white;
+
+}
+
+
+h2 {
+    width: 150px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 20px 0 20px 35px;
+    font-size: 18px;
+}
+
+h2 span {
+    background: #fff;
+    padding: 0 10px;
+}
+
+.line{
+    position: relative;
+    left: 54px;
+    top: -20px;
+    width: 26px;
+    padding: 1px;
+    background-color: brown;
+    opacity: 100%;
+    border-radius: 50px;
+}

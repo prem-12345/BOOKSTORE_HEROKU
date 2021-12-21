@@ -1,0 +1,71 @@
+<app-dashboard></app-dashboard>
+<form [formGroup]="addbooksForm">
+    <div class="addbooks-container" fxFlex="100%" fxLayoutAlign="center center">
+
+        <mat-card class="card2">
+            <h3 class="title">Book Details</h3>
+
+            <mat-card-content fxLayout="column" class="content">
+
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-card-subtitle class="sub-title">Book Name</mat-card-subtitle>
+                        <input matInput placeholder="bookname" formControlName="bookName"
+                            class="input-field">
+                    </mat-form-field>
+                </div>
+
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-card-subtitle class="sub-title">Author</mat-card-subtitle>
+                        <input matInput placeholder="author" formControlName="author" class="input-field">
+                    </mat-form-field>
+                </div>
+
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-card-subtitle class="sub-title">Description</mat-card-subtitle>
+                        <input matInput placeholder="description" formControlName="description"
+                            class="input-field">
+                    </mat-form-field>
+                </div>
+
+
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-card-subtitle class="sub-title">Quantity</mat-card-subtitle>
+                        <input matInput placeholder="quantity" formControlName="quantity"
+                            class="input-field">
+                    </mat-form-field>
+                </div>
+
+
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-card-subtitle class="sub-title">Price</mat-card-subtitle>
+                        <input matInput placeholder="price" formControlName="price" class="input-field">
+                    </mat-form-field>
+                </div>
+
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-card-subtitle class="sub-title">DiscountPrice</mat-card-subtitle>
+                        <input matInput placeholder="discountPrice" formControlName="discountPrice"
+                            class="input-field">
+                    </mat-form-field>
+                </div>
+
+                <div class="buttons" (click)="onSubmit()"> 
+                    <button class="btn1">Add Book</button>
+                </div>
+
+            </mat-card-content>
+
+
+
+        </mat-card>
+
+
+
+    </div>
+</form>

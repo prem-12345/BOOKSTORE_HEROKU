@@ -1,0 +1,71 @@
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+    <div class="signup-container" fxFlex="100%" fxLayoutAlign="center center" >
+
+        <!-- <mat-card class="main" fxLayoutAlign="center center"> -->
+        
+            <mat-card class="card1" fxLayout="column" fxLayoutAlign="center center" fxHide.lt-sm>
+                <img src="../../../assets/login-icon" alt="" height="170px" width="170px" style=" border-radius: 120px; ">
+                <p class="text">ONLINE BOOK SHOPPING</p>
+            </mat-card>
+        
+            <mat-card class="card2">
+        
+                <div  fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="85px">
+                <button class="card-title" (click)=login()>LOGIN</button>
+                <button class="card-title" (click)=signup()>SIGNUP</button>
+               </div> 
+               <div>
+                <button class="line"></button>
+               </div>
+               
+               <mat-card-content fxLayout="column" class="content">
+
+                <div>
+                    <mat-form-field  appearance="fill">
+                        <mat-label>Select an option</mat-label>
+                        <mat-select formControlName="selectedvalue" disableRipple>
+                          <mat-option value="user">User</mat-option>
+                          <mat-option value="admin">Admin</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                </div>
+        
+               <div>
+                <mat-form-field appearance="outline">
+                    <mat-card-subtitle class="sub-title">Full Name</mat-card-subtitle>
+                    <input matInput placeholder="full name" class="input-field" type="text" formControlName="fullName">
+                </mat-form-field>
+               </div>
+            
+               <div>
+                <mat-form-field appearance="outline">
+                    <mat-card-subtitle class="sub-title">Email Id</mat-card-subtitle>
+                    <input matInput  placeholder="email" class="input-field" type="email" formControlName="email">
+                </mat-form-field>
+               </div>
+                
+               <div>
+                <mat-form-field appearance="outline">
+                    <mat-card-subtitle class="sub-title">Password</mat-card-subtitle>
+                    <input matInput  placeholder="password" class="input-field" type="password" formControlName="password" autocomplete="on">
+                </mat-form-field>
+               </div>
+            
+            <div class="content4">
+                <mat-form-field appearance="outline">
+                    <mat-card-subtitle class="sub-title">Mobile Number</mat-card-subtitle>
+                    <input matInput placeholder="mobile number" class="input-field" formControlName="phone">
+                </mat-form-field>
+            </div>
+            
+            <button class="btn">SIGN-UP</button>
+            </mat-card-content>
+               
+        
+        
+            </mat-card>
+        
+        <!-- </mat-card> -->
+            
+        </div>
+</form>

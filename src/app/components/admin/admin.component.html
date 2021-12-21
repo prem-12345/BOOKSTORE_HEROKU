@@ -1,0 +1,44 @@
+<app-dashboard></app-dashboard>
+
+<table class="css-serial"  BORDER="7" WIDTH="70%" CELLPADDING="21" CELLSPACING="0">
+
+    <thead>
+        <tr style="border: 1px solid #DCDCDC;background-color: gainsboro">
+            <th>Sr.No</th>
+            <th>BookImage</th>
+            <th>BookName</th>
+            <th>Author</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>DiscountPrice</th>
+            <th>Quantity</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody *ngFor="let book of booksArray">
+
+        <tr style="text-align: center;">
+
+            <td></td>
+            <td><img src="../../../assets/Image 11@2x.png" width="80px" height="80px" alt=""></td>
+            <td>{{book.bookName}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.description}}</td>
+            <td>Rs.{{book.price}}</td>
+            <td>Rs.{{book.discountPrice}}</td>
+            <td>{{book.quantity}}</td>
+            <td>
+                <div fxLayout="column" fxLayoutGap="15px">
+                    <button routerLink="/add-books">Add Books</button>
+                    <button  (click)="openDialog(book)">update</button>
+                    <button (click)="delete(book)">delete</button>
+                </div>
+            </td>
+
+        </tr>
+
+    </tbody>
+
+</table>
+

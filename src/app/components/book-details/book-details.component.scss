@@ -1,0 +1,351 @@
+.container {
+    margin-left  : 192px;
+    margin-top   : 55px;
+    margin-bottom: 50px;
+ 
+ }
+ 
+ .header {
+    margin-top    : -20px;
+    margin-left: -50px;
+ }
+ 
+ .head0 {
+    text-align    : left;
+    font          : normal normal normal 12px/16px Roboto;
+    letter-spacing: 0px;
+    color         : #9D9D9D;
+    opacity       : 1;
+    display       : inline;
+    padding-right: 0px; 
+    min-width: 50px;
+    background-color: transparent;
+    border: none;
+ }
+ 
+ .head1 {
+    width         : 40px;
+    height        : 16px;
+    text-align    : left;
+    font          : normal normal normal 12px/16px Roboto;
+    letter-spacing: 0px;
+    color         : black;
+    opacity       : 1;
+    display       : inline;
+ }
+ 
+ 
+ .book {
+    width        : 282px;
+    height       : 364px;
+    background   : transparent 0% 0% no-repeat padding-box;
+    padding      : 40px 35px;
+    border       : 1px solid #D1D1D1;
+    border-radius: 2px;
+    margin-top: -199px;
+   
+ }
+
+ .book-data{
+    width: 600px;
+ }
+ 
+ .addtobagbutton {
+    width        : 170px;
+    height       : 40px;
+    background   : #A03037 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    opacity      : 1;
+    color: white;
+ }
+ 
+ .wishlistbutton {
+    width        : 170px;
+    height       : 40px;
+    background   : #333333 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    opacity      : 1;
+ }
+
+ .bookname {
+    height        : 37px;
+    text-align    : left;
+    font          : normal normal normal 28px/37px Roboto;
+    letter-spacing: 0px;
+    color         : #0A0102;
+    opacity       : 1;
+ }
+ 
+ .author {
+    width         : 114px;
+    height        : 24px;
+    text-align    : left;
+    font          : normal normal normal 18px/24px Roboto;
+    letter-spacing: 0px;
+    color         : #878787;
+    opacity       : 1;
+    margin-top: -20px;
+ }
+ 
+ .ratingbox {
+    display        : flex;
+    justify-content: space-around;
+    background     : #388E3C 0% 0% no-repeat padding-box;
+    border-radius  : 1px;
+    opacity        : 1;
+    padding        : 3px 9px;
+    width          : 55px;
+    height         : 25px;
+    margin-bottom  : 10px;
+    
+ }
+ 
+ .rating {
+    font-size     : 14px;
+    font-weight   : bold;
+    letter-spacing: 0px;
+    color         : #FFFFFF;
+    opacity       : 1;
+    display       : inline;
+    margin-bottom : 0px;
+    align-self    : center;
+    margin-top: 3px;
+ }
+ 
+ .rating_star {
+    font-size  : 18px;
+    color      : #FFFFFF;
+    height     : 19px;
+    width      : 15px;
+    padding-top: 0px;
+    align-self : center;
+ }
+ 
+ .ratingno {
+    width         : 27px;
+    height        : 20px;
+    font          : normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color         : #878787;
+    opacity       : 1;
+    margin-top    : 15px;
+    margin-left: 15px;
+ }
+ 
+ 
+ .actualprice {
+    font-weight   : 600;
+    font-size     : 30px;
+    letter-spacing: 0px;
+    color         : #0A0102;
+    opacity       : 1;
+ }
+ 
+ .discountPrice {
+    font          : normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color         : #878787;
+    opacity       : 1;
+    position: relative;
+    top: 22px;
+ }
+ 
+ .bookdetails {
+    width         : 76px;
+    height        : 20px;
+    text-align    : left;
+    font          : normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color         : #878787;
+    opacity       : 1;
+ }
+ 
+ 
+ ul.list {
+    padding      : 0px 0px 0px 15px;
+    margin-bottom: 3px;
+ }
+ 
+ .description {
+    margin-bottom: 20px;
+ }
+ 
+ .feedbackhead {
+    height        : 24px;
+    font          : normal normal normal 18px/24px Roboto;
+    letter-spacing: 0px;
+    color         : #0A0102;
+    opacity       : 1;
+ }
+ 
+ .reviewbox {
+    max-width    : fit-content;
+    height       : max-content;
+    background   : #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    padding      : 18px;
+ }
+ 
+ .reviewbox button:not(:checked) ~ label:hover{
+      color: #fd4;
+      background-color: #fd4;
+ }
+
+ .ratinghead {
+    height        : 16px;
+    text-align    : left;
+    font          : normal normal normal 12px/16px Roboto;
+    letter-spacing: 0px;
+    color         : #0A0102;
+    opacity       : 1;
+    margin-bottom : 0px;
+ }
+ 
+ .searchinput {
+    width        : 527px;
+    height       : 63px;
+    background   : #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    opacity      : 1;
+    outline      : none;
+    border       : none;
+    padding      : 8px;
+ }
+ 
+ .reviewsubmit {
+    width        : 76px;
+    height       : 30px;
+    background   : #3371B5 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    opacity      : 1;
+    margin-top   : 8px;
+    align-self   : flex-end !important;
+ }
+ 
+ .submitbotton {
+    text-align    : left;
+    font          : normal normal normal 14px/19px Roboto;
+    letter-spacing: 1px;
+    color         : #FFFFFF;
+    text-transform: capitalize;
+    opacity       : 1;
+    margin-bottom : 0px;
+    text-align    : center;
+    margin-top: 0px;
+ }
+ 
+ .count {
+    background   : #FFFFFF 0% 0% no-repeat padding-box;
+    border       : 1px solid #DBDBDB;
+    border-radius: 2px;
+    font-size    : x-large;
+    color        : #333232;
+    opacity      : 1;
+    padding      : 4px 35px;
+    margin-top: 0px;
+    margin-left: 6px;
+    margin-right: 6px;
+
+ }
+ 
+ .plusminus {
+    width     : 38px !important;
+    height    : 38px !important;
+    background: #FAFAFA 0% 0% no-repeat padding-box !important;
+    opacity   : 1 !important;
+ }
+
+.fav-icon{
+   margin-left: -90px; 
+   margin-top: 5px; 
+   color: white;
+}
+
+.img01{
+   margin-left: -71px; 
+   margin-top: 28px;
+}
+
+.img02{
+   margin-left: -71px;
+}
+
+.wish-text{
+   margin-top: -22px; 
+   color: white;
+}
+
+
+.dispaly-rating{
+   position: relative;
+   left: 35px;
+   top: -18px;
+}
+
+.display-comment{
+   position: relative;
+   left: 35px;
+}
+
+.user-name{
+   position: relative;
+   top: -12px;
+   left: 13px;
+}
+
+.feed-container{
+   position: relative;
+   top: 20px;
+   width: 579px;
+   // border: 1px solid grey;
+}
+
+
+
+.center{
+   position: relative;
+   }
+   .center .stars{
+   
+   width: 500px;
+   text-align: start;
+   }
+   .stars input{
+   display: none;
+   }
+   .stars label{
+   float: left;
+   font-size: 30px;
+   color: lightgrey;
+   margin: 0 5px;
+   text-shadow: 1px 1px #bbb;
+   }
+   .stars label:before{
+   content: '★';
+   }
+   .stars input:checked ~ label{
+   color: gold;
+   text-shadow: 1px 1px #c60;
+   }
+   .stars:not(:checked) > label:hover,
+   .stars:not(:checked) > label:hover ~ label{
+   color: gold;
+   }
+   .stars input:checked > label:hover,
+   .stars input:checked > label:hover ~ label{
+   color: gold;
+   text-shadow: 1px 1px goldenrod;
+   }
+   .stars .result:before{
+   position: absolute;
+   content: "";
+   width: 100%;
+   left: 50%;
+   transform: translateX(-47%);
+   bottom: -30px;
+   font-size: 30px;
+   font-weight: 500;
+   color: gold;
+   font-family: 'Poppins', sans-serif;
+   display: none;
+   }
