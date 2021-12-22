@@ -14,6 +14,7 @@
     letter-spacing: 0px;
     color         : #9D9D9D;
     opacity       : 1;
+    cursor: pointer;
  }
  
  .text2 {
@@ -30,7 +31,7 @@
      border: 1px solid grey;
      left: 128px;
      width: 800px;
-     padding: 15px;
+   //   padding: 15px;
  }
 
  .img-div{
@@ -92,7 +93,7 @@
     font-size: x-large;
     color: #333232;
     opacity: 1;
-    padding: 4px 13px;
+    padding: 8px 13px;
     margin-top: 0px;
     margin-left: 6px;
     margin-right: -29px;
@@ -110,7 +111,7 @@
     position: relative;
     left: 500px;
     padding: 8px 20px;
-    top: 15px;
+    top: 8px;
 
  }
 
@@ -120,13 +121,13 @@
    border: 1px solid grey;
    left: 128px;
    width: 800px;
-   padding: 15px;
+   // padding: 15px;
 }
 
 
 .input-field{
    position: relative;
-   top: -9px;
+   top: -5px;
    padding: 4px;
    width: 400px;
 }
@@ -165,7 +166,7 @@
    border: 1px solid grey;
    left: 128px;
    width: 800px;
-   padding: 15px;
+   // padding: 15px;
 }
 
 .example-radio-group {
@@ -178,14 +179,19 @@
    margin: 5px;
  }
 
-:host ::ng-deep .mat-radio-outer-circle{
-   border-style: none;
- }
+// :host ::ng-deep .mat-radio-outer-circle{
+//    border-style: none;
+//  }
+
+::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle{
+   background-color: #A03037;
+}
+
 
  .minus{
    font-size: 50px;
    position: relative;
-   top: -15px;
+   top: -6px;
    color: grey;
 }
 
@@ -193,8 +199,17 @@
    font-size: 25px;
    position: relative;
    color: grey;
+   top: -2px;
 }
  
 .cart{
    width: 430px;
+}
+
+::ng-deep .mat-badge-medium.mat-badge-above .mat-badge-content {
+  top: 0px;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline{
+   color: #DCDCDC;
 }

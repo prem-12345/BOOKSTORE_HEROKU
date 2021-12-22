@@ -14,18 +14,7 @@
                <div>
                    <button class="line"></button>
                </div>
-                <mat-card-content fxLayout="column" class="content" >
-                    
-                    <div>
-                        <mat-form-field  appearance="fill">
-                            <mat-label>Select an option</mat-label>
-                            <mat-select formControlName="selectedvalue" disableRipple>
-                              <mat-option value="user">User</mat-option>
-                              <mat-option value="admin">Admin</mat-option>
-                            </mat-select>
-                          </mat-form-field>
-                    </div>
-
+                <mat-card-content fxLayout="column" class="content" fxLayoutGap="-5px">
                     <div class="content1">
                         <mat-form-field appearance="outline">
                             <mat-card-subtitle class="sub-title">Email Id</mat-card-subtitle>
@@ -41,6 +30,16 @@
                   </div>
 
                    <p class="forgot-link" routerLink="/forgot-password">Forget Password?</p>
+
+                   <div>
+                    <mat-form-field  appearance="fill">
+                        <mat-label>Select an option</mat-label>
+                        <mat-select formControlName="selectedvalue" disableRipple>
+                          <mat-option value="user">User</mat-option>
+                          <mat-option value="admin">Admin</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                </div>
 
                   <div class="footer" fxLayout="column" fxLayoutGap="15px">
                     <button class="login-btn">Login</button>

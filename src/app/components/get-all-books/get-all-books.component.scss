@@ -65,7 +65,7 @@
   background-color:#388E3C; 
   border:none; 
   color:#FFFFFF;
-  margin-left: 18px
+  margin-left: 34px
 }
 
 .price{
@@ -121,8 +121,10 @@
 
 .cart-wish{
   position: relative; 
-  left: 88px; 
+  left: 81px; 
   margin-bottom: 3px;
+  top: -48px;
+
 }
 
 .fav-icon{
@@ -134,6 +136,7 @@
 .sorting{
   position: relative;
   left: 876px;
+  top: 8px;
 }
 
 .fabbutton{
@@ -157,3 +160,21 @@
 :host ::ng-deep .ngx-pagination .current{
   background: #A03037;
 }
+
+::ng-deep .mat-form-field-flex > .mat-form-field-infix { padding: 0.6em 0px !important;}
+
+::ng-deep .mat-raised-button {
+  top: 6px;
+  line-height: 23px;
+  min-width: 0px;
+ }
+
+ .qty{
+   position: relative;
+   left: 2px;
+   top: 5px;
+ }
+
+ .fav-btn{
+   background-color: #DBDBDB;
+ }

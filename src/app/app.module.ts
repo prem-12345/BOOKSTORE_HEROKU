@@ -75,7 +75,9 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatDividerModule,
     NgxPaginationModule,
     MatBadgeModule,
-    MatDialogModule
+    MatDialogModule,
+    MatButtonModule
+    
     
     
 

@@ -5,9 +5,9 @@
             <p class="text2">({{bookcount}}_items)</p>
         </div>
         <div class="sorting" fxLayout="row wrap" [ngClass.sm]="'sorting-div'">
-            <mat-form-field appearance="fill">
-                <mat-label *ngIf="hideTitle">Sort by relevance</mat-label>
-                <mat-select style="height: 10px;">
+            <mat-form-field appearance="outline">
+                <mat-label>Sort by relevance</mat-label>
+                <mat-select >
                     <mat-option (click)="sortlowtohigh()" value="option1">Price:Low to High</mat-option>
                     <mat-option (click)="sorthightolow()" value="option2">Price:High to Low</mat-option>
                     <mat-option (click)="newestarrivalse()" value="option3">Newest Arrivals</mat-option>
@@ -44,7 +44,8 @@
             <div fxLayout="row" fxLayoutAlign="space-evenly center" class='ratingbox'>
                 <button class="green-btn" mat-raised-button fxLayoutAlign="center center">
                     4.5<img src="../../../assets/star_white_24dp.svg" height="10px" width="10px" class="star">
-                </button> ({{book.quantity}})
+                </button> 
+                <span class="qty">({{book.quantity}})</span>
             </div>
 
             <div class="price" fxLayout="row" fxLayoutAlign="space-evenly center" style="margin-left: -75px;"
@@ -55,11 +56,15 @@
         </div>
 
         <div fxLayout="column" class="cart-wish">
-            
-            <mat-icon class="fav-icon" (click)="addtowishlist(book)">favorite</mat-icon>
-            <button mat-icon-button aria-label="Example cart icon" class="cart-btn" (click)="addtobag(book)">
-                <img src="../../../assets/cart.svg" alt="" class="profile-icon" height="28px" width="17px">
-            </button>
+            <div class="example-button-container" fxLayout="column" class="cart-wish" fxLayoutGap="6px">
+                <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon" class="fav-btn" (click)="addtowishlist(book)">
+                  <mat-icon >favorite</mat-icon>
+                </button>
+
+                <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon" class="fav-btn" (click)="addtobag(book)">
+                    <mat-icon> <img src="../../../assets/cart.svg" alt="" class="profile-icon" height="28px" width="17px"></mat-icon>
+                </button>
+            </div>
         </div>
     </div>
 

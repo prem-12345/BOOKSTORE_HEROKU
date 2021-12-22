@@ -98,8 +98,8 @@ mat-toolbar {
     position: relative;
     color: white;
     font-size: 13px;
-    top: 5px;
-    left: -29px;
+    top: 19px;
+    left: -37px;
 }
 
 .cart-but{
@@ -114,8 +114,8 @@ mat-toolbar {
     position: relative;
     color: white;
     font-size: 13px;
-    top: 7px;
-    left: -20px;
+    top: 19px;
+    left: -31px;
 }
 
 #logout {
@@ -158,11 +158,21 @@ mat-toolbar {
 
 .titles{
     padding: 30px 105px 5px 15px;
+    margin-top: -21px;
 }
 
 .tool-div{
-    width: 658px;
+    width: 506px;
 }
 
+ :host ::ng-deep .mat-badge-medium.mat-badge-above .mat-badge-content{
+    top: 10px;
+}
 
+.image{
+    left: 29px;
+}
 
+.bookstore{
+    left: 54px;
+}

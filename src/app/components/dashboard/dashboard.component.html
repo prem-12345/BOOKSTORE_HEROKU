@@ -2,9 +2,9 @@
     <mat-toolbar [ngClass.xs]="'tool-div'">
 
         <img src="../../../assets/education.svg" alt="" width="31px" height="24px" class="book-img"
-            routerLink="/profile">
+        [ngClass.xs]="'image'">
 
-        <span class="text1" (click)="logOut()">Bookstore</span>
+        <span class="text1" [ngClass.xs]="'bookstore'">Bookstore</span>
 
         <span class="search" fxHide.lt-xs  fxHide.lt-md fxFlex=40 fxLayout="row" fxLayoutAlign="start center">
             <a href="#" fxHide.lt-sm >
@@ -31,16 +31,16 @@
             fxLayoutAlign="center center">
 
             <div class="pofile-div">
-                <button mat-icon-button class="profile-but" aria-label="Example person icon" routerLink="/wishlist">
+                <button mat-icon-button class="profile-but" aria-label="Example person icon" [matMenuTriggerFor]="belowMenu">
                     <mat-icon class="profile-icon">person_outline</mat-icon>
                 </button>
 
-                <a class="profile-hint" [matMenuTriggerFor]="belowMenu">Profile</a>
+                <a class="profile-hint">Profile</a>
             </div>
 
             <mat-menu #belowMenu="matMenu">
                 <p class="titles">Hello, Profile</p>
-                <button mat-menu-item>
+                <button mat-menu-item routerLink="/profile">
                     <mat-icon>person_outline</mat-icon>
                     Profile
                 </button>
@@ -48,11 +48,11 @@
                     <mat-icon>shopping_bag</mat-icon>
                     My Orders
                 </button>
-                <button mat-menu-item>
-                    <mat-icon>favorite_border</mat-icon>
+                <button mat-menu-item routerLink="/wishlist">
+                    <mat-icon >favorite_border</mat-icon>
                     My Wishlist
                 </button>
-                <button mat-menu-item id="logout" style="width: 100px;" fxLayoutAlign="center center">Log Out</button>
+                <button mat-menu-item id="logout" style="width: 100px;" fxLayoutAlign="center center" (click)="logOut()">Log Out</button>
             </mat-menu>
 
         </span>
@@ -66,7 +66,7 @@
                     <img src="../../../assets/cart.svg" alt="" class="profile-icon" height="20px" width="20px"
                         routerLink="/my-cart">
                 </button>
-                <a href="" class="cart-hint">Cart</a>
+                <a href=""  routerLink="/my-cart" class="cart-hint">Cart</a>
             </div>
         </span>
 

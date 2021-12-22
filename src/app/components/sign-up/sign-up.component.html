@@ -18,18 +18,7 @@
                 <button class="line"></button>
                </div>
                
-               <mat-card-content fxLayout="column" class="content">
-
-                <div>
-                    <mat-form-field  appearance="fill">
-                        <mat-label>Select an option</mat-label>
-                        <mat-select formControlName="selectedvalue" disableRipple>
-                          <mat-option value="user">User</mat-option>
-                          <mat-option value="admin">Admin</mat-option>
-                        </mat-select>
-                      </mat-form-field>
-                </div>
-        
+               <mat-card-content fxLayout="column" class="content" fxLayoutGap="-10px">
                <div>
                 <mat-form-field appearance="outline">
                     <mat-card-subtitle class="sub-title">Full Name</mat-card-subtitle>
@@ -56,6 +45,16 @@
                     <mat-card-subtitle class="sub-title">Mobile Number</mat-card-subtitle>
                     <input matInput placeholder="mobile number" class="input-field" formControlName="phone">
                 </mat-form-field>
+            </div>
+
+            <div>
+                <mat-form-field  appearance="fill">
+                    <mat-label>Select an option</mat-label>
+                    <mat-select formControlName="selectedvalue" disableRipple>
+                      <mat-option value="user">User</mat-option>
+                      <mat-option value="admin">Admin</mat-option>
+                    </mat-select>
+                  </mat-form-field>
             </div>
             
             <button class="btn">SIGN-UP</button>
