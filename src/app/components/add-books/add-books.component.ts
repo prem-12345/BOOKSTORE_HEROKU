@@ -12,6 +12,8 @@ export class AddBooksComponent implements OnInit {
   addbooksForm !: FormGroup;
   submitted = false;
 
+  addToCart:boolean=false;
+
   constructor(private formBuilder: FormBuilder, private booksService: BooksService, private router: Router) { }
 
   ngOnInit(): void {
@@ -23,6 +25,7 @@ export class AddBooksComponent implements OnInit {
       quantity: ['', Validators.required],
       price: ['', Validators.required],
       discountPrice: ['', Validators.required],
+      
 
     });
 
@@ -41,7 +44,8 @@ export class AddBooksComponent implements OnInit {
         "description": this.addbooksForm.value.description,
         "quantity": this.addbooksForm.value.quantity,
         "price": this.addbooksForm.value.price,
-        "discountPrice": this.addbooksForm.value.discountPrice
+        "discountPrice": this.addbooksForm.value.discountPrice,
+          
       }
       this.booksService.addBooks(reqData).subscribe((response) => {
         console.log(response);

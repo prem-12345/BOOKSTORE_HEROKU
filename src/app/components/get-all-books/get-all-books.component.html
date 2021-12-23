@@ -4,6 +4,7 @@
             <p class="text1">Books</p>
             <p class="text2">({{bookcount}}_items)</p>
         </div>
+
         <div class="sorting" fxLayout="row wrap" [ngClass.sm]="'sorting-div'">
             <mat-form-field appearance="outline">
                 <mat-label>Sort by relevance</mat-label>
@@ -14,6 +15,7 @@
                 </mat-select>
             </mat-form-field>
         </div>
+        
         <div class="example-spacer"></div>
 
     </div>
@@ -57,11 +59,16 @@
 
         <div fxLayout="column" class="cart-wish">
             <div class="example-button-container" fxLayout="column" class="cart-wish" fxLayoutGap="6px">
-                <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon" class="fav-btn" (click)="addtowishlist(book)">
+                <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon" class="fav-btn" (click)="addtowishlist(book)"
+                >
                   <mat-icon >favorite</mat-icon>
                 </button>
 
                 <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon" class="fav-btn" (click)="addtobag(book)">
+                    <mat-icon> <img src="../../../assets/cart.svg" alt="" class="profile-icon" height="28px" width="17px"></mat-icon>
+                </button>
+
+                <button *ngIf="hide" mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon" class="fav-added" (click)="addtobag(book)">
                     <mat-icon> <img src="../../../assets/cart.svg" alt="" class="profile-icon" height="28px" width="17px"></mat-icon>
                 </button>
             </div>

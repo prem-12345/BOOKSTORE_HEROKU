@@ -72,6 +72,10 @@ export class MyCartComponent implements OnInit {
         console.log(response);
         this.cartitems = response.result;
         console.log(this.cartitems);
+        this.cartitems.map((book:any) => {
+          book.isCarted =true;
+          return book;
+      })
         this.count = response.result.length;
 
         this.dataservice.changeMessage(this.count)
@@ -89,7 +93,7 @@ export class MyCartComponent implements OnInit {
 
   countincrease(data: any) {
     this.ordercount = data.quantityToBuy;
-    this.ordercount += 1
+    this.ordercount += 1;
     console.log("number of quantity to buy", this.ordercount);
     this.updateCount(data)
   }
@@ -98,11 +102,12 @@ export class MyCartComponent implements OnInit {
     this.ordercount = data.quantityToBuy;
     if (this.ordercount > 0) {
       this.ordercount -= 1;
+      this.updateCount(data)
     }
     else {
       return;
     }
-    this.updateCount(data)
+    
   }
 
   updateCount(data: any) {
